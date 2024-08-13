@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a65457a31e9b69e3d2bf5ea169d173af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a65457a31e9b69e3d2bf5ea169d173af" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a65457a31e9b69e3d2bf5ea169d173af = L.map(
+                "map_a65457a31e9b69e3d2bf5ea169d173af",
+                {
+                    center: [38.43006393918919, 17.18403426570911],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a69b728b9b9159b5ee188a1b2b7ef64d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a69b728b9b9159b5ee188a1b2b7ef64d.addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+            var circle_marker_f633ad0ef324320b3ea6f4ee80ae718a = L.circleMarker(
+                [-24.7761086, 134.755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3883, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_ff662f70a84cf1e8aa2d6b24d567810e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bb01e2da55b5ddf38d6b43aa243788b = $(`<div id="html_5bb01e2da55b5ddf38d6b43aa243788b" style="width: 100.0%; height: 100.0%;">Country: Australia<br>Quantity: 83883<br>Average Unit Price: 3.05</div>`)[0];
+                popup_ff662f70a84cf1e8aa2d6b24d567810e.setContent(html_5bb01e2da55b5ddf38d6b43aa243788b);
+            
+        
+
+        circle_marker_f633ad0ef324320b3ea6f4ee80ae718a.bindPopup(popup_ff662f70a84cf1e8aa2d6b24d567810e)
+        ;
+
+        
+    
+    
+            var circle_marker_940d8962fa26650e513ff4e5db99a989 = L.circleMarker(
+                [47.59397, 14.12456],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4881, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_af30c7a77064b399f132a00575100b98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a5617890adc9587ec3478e43e9598b4 = $(`<div id="html_7a5617890adc9587ec3478e43e9598b4" style="width: 100.0%; height: 100.0%;">Country: Austria<br>Quantity: 4881<br>Average Unit Price: 4.26</div>`)[0];
+                popup_af30c7a77064b399f132a00575100b98.setContent(html_7a5617890adc9587ec3478e43e9598b4);
+            
+        
+
+        circle_marker_940d8962fa26650e513ff4e5db99a989.bindPopup(popup_af30c7a77064b399f132a00575100b98)
+        ;
+
+        
+    
+    
+            var circle_marker_21447b827813f1058696a1865214a099 = L.circleMarker(
+                [26.1551249, 50.5344606],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.026, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_83e2dd1f66fd699a2381864958131f1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95061dca925b0fd59d9d3d4206dd18e6 = $(`<div id="html_95061dca925b0fd59d9d3d4206dd18e6" style="width: 100.0%; height: 100.0%;">Country: Bahrain<br>Quantity: 260<br>Average Unit Price: 4.64</div>`)[0];
+                popup_83e2dd1f66fd699a2381864958131f1b.setContent(html_95061dca925b0fd59d9d3d4206dd18e6);
+            
+        
+
+        circle_marker_21447b827813f1058696a1865214a099.bindPopup(popup_83e2dd1f66fd699a2381864958131f1b)
+        ;
+
+        
+    
+    
+            var circle_marker_ae77257b8eff210e94f27b188b17e73c = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3237, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_c6b121254a5ac4bc0be076a0599b838e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a4435ddb5c74139c3cce11a425786ff = $(`<div id="html_9a4435ddb5c74139c3cce11a425786ff" style="width: 100.0%; height: 100.0%;">Country: Belgium<br>Quantity: 23237<br>Average Unit Price: 3.63</div>`)[0];
+                popup_c6b121254a5ac4bc0be076a0599b838e.setContent(html_9a4435ddb5c74139c3cce11a425786ff);
+            
+        
+
+        circle_marker_ae77257b8eff210e94f27b188b17e73c.bindPopup(popup_c6b121254a5ac4bc0be076a0599b838e)
+        ;
+
+        
+    
+    
+            var circle_marker_b60108f06c1e306b0c2521f7e665162e = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0356, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_d72f55e47311f12b1993aa9c338f9e39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e43e58d257c628cea00704f2b172a83b = $(`<div id="html_e43e58d257c628cea00704f2b172a83b" style="width: 100.0%; height: 100.0%;">Country: Brazil<br>Quantity: 356<br>Average Unit Price: 4.46</div>`)[0];
+                popup_d72f55e47311f12b1993aa9c338f9e39.setContent(html_e43e58d257c628cea00704f2b172a83b);
+            
+        
+
+        circle_marker_b60108f06c1e306b0c2521f7e665162e.bindPopup(popup_d72f55e47311f12b1993aa9c338f9e39)
+        ;
+
+        
+    
+    
+            var circle_marker_b77e8c09a16c48546644007e480fcc2f = L.circleMarker(
+                [61.0666922, -107.991707],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2763, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_111a93045d7d453af0806023c92645f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_093cec53a866577e7a8477827ee78018 = $(`<div id="html_093cec53a866577e7a8477827ee78018" style="width: 100.0%; height: 100.0%;">Country: Canada<br>Quantity: 2763<br>Average Unit Price: 6.03</div>`)[0];
+                popup_111a93045d7d453af0806023c92645f4.setContent(html_093cec53a866577e7a8477827ee78018);
+            
+        
+
+        circle_marker_b77e8c09a16c48546644007e480fcc2f.bindPopup(popup_111a93045d7d453af0806023c92645f4)
+        ;
+
+        
+    
+    
+            var circle_marker_ec4e6b3261fb69f2296222f6d313825b = L.circleMarker(
+                [49.21230655, -2.1255999596428845],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9485, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_213e781ceae723b7ebc186b01fd2d3f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad52d1de8ea84795149740c6918ffdab = $(`<div id="html_ad52d1de8ea84795149740c6918ffdab" style="width: 100.0%; height: 100.0%;">Country: Channel Islands<br>Quantity: 9485<br>Average Unit Price: 4.54</div>`)[0];
+                popup_213e781ceae723b7ebc186b01fd2d3f1.setContent(html_ad52d1de8ea84795149740c6918ffdab);
+            
+        
+
+        circle_marker_ec4e6b3261fb69f2296222f6d313825b.bindPopup(popup_213e781ceae723b7ebc186b01fd2d3f1)
+        ;
+
+        
+    
+    
+            var circle_marker_ffac981bf5051079fc77e947899cd7b4 = L.circleMarker(
+                [34.9174159, 32.889902651331866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6324, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_f87a882fb24810b0f482236d944ecd04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd027cee2dcda8e18c317c0ff0a4b66e = $(`<div id="html_dd027cee2dcda8e18c317c0ff0a4b66e" style="width: 100.0%; height: 100.0%;">Country: Cyprus<br>Quantity: 6324<br>Average Unit Price: 5.74</div>`)[0];
+                popup_f87a882fb24810b0f482236d944ecd04.setContent(html_dd027cee2dcda8e18c317c0ff0a4b66e);
+            
+        
+
+        circle_marker_ffac981bf5051079fc77e947899cd7b4.bindPopup(popup_f87a882fb24810b0f482236d944ecd04)
+        ;
+
+        
+    
+    
+            var circle_marker_826819c6ca9085ffaad0de4dc74e5e9d = L.circleMarker(
+                [49.7439047, 15.3381061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0671, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_13c1b5a9c8d0466b75484220e7fb2db5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a00ab5eba71abdebff86bab1e0558888 = $(`<div id="html_a00ab5eba71abdebff86bab1e0558888" style="width: 100.0%; height: 100.0%;">Country: Czech Republic<br>Quantity: 671<br>Average Unit Price: 3.13</div>`)[0];
+                popup_13c1b5a9c8d0466b75484220e7fb2db5.setContent(html_a00ab5eba71abdebff86bab1e0558888);
+            
+        
+
+        circle_marker_826819c6ca9085ffaad0de4dc74e5e9d.bindPopup(popup_13c1b5a9c8d0466b75484220e7fb2db5)
+        ;
+
+        
+    
+    
+            var circle_marker_a0125ff1a5c8d1b5b84cc13dd13f2241 = L.circleMarker(
+                [55.670249, 10.3333283],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.821, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_e77c72c0d34eaf3e371930c26eba9738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9979a0698ff59b9e3766f74dfbce8a1b = $(`<div id="html_9979a0698ff59b9e3766f74dfbce8a1b" style="width: 100.0%; height: 100.0%;">Country: Denmark<br>Quantity: 8210<br>Average Unit Price: 3.15</div>`)[0];
+                popup_e77c72c0d34eaf3e371930c26eba9738.setContent(html_9979a0698ff59b9e3766f74dfbce8a1b);
+            
+        
+
+        circle_marker_a0125ff1a5c8d1b5b84cc13dd13f2241.bindPopup(popup_e77c72c0d34eaf3e371930c26eba9738)
+        ;
+
+        
+    
+    
+            var circle_marker_c4a350891f33fbeef9987a5544e7740b = L.circleMarker(
+                [52.865196, -7.9794599],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0129, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_92c5c25646ea30331c1f50b5f328d435 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1658f31de1a49d8154d95fd9f6e85f2 = $(`<div id="html_a1658f31de1a49d8154d95fd9f6e85f2" style="width: 100.0%; height: 100.0%;">Country: EIRE<br>Quantity: 140129<br>Average Unit Price: 4.45</div>`)[0];
+                popup_92c5c25646ea30331c1f50b5f328d435.setContent(html_a1658f31de1a49d8154d95fd9f6e85f2);
+            
+        
+
+        circle_marker_c4a350891f33fbeef9987a5544e7740b.bindPopup(popup_92c5c25646ea30331c1f50b5f328d435)
+        ;
+
+        
+    
+    
+            var circle_marker_bae01fdbd0950ca03dae0d21e70a3a3c = L.circleMarker(
+                [24.2220464, 120.689399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0499, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_373784a9ca59cfddae7962dd0f2cc434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e41e476388dacd0ed15c88e56dca381e = $(`<div id="html_e41e476388dacd0ed15c88e56dca381e" style="width: 100.0%; height: 100.0%;">Country: European Community<br>Quantity: 499<br>Average Unit Price: 4.83</div>`)[0];
+                popup_373784a9ca59cfddae7962dd0f2cc434.setContent(html_e41e476388dacd0ed15c88e56dca381e);
+            
+        
+
+        circle_marker_bae01fdbd0950ca03dae0d21e70a3a3c.bindPopup(popup_373784a9ca59cfddae7962dd0f2cc434)
+        ;
+
+        
+    
+    
+            var circle_marker_15c5056eef2e7e54c6812d45da793918 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0224, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_37ab47aafcc9887c078c4cc399ca781f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd80f6249fdcf8ab4a3a31b00b1dec5e = $(`<div id="html_bd80f6249fdcf8ab4a3a31b00b1dec5e" style="width: 100.0%; height: 100.0%;">Country: Finland<br>Quantity: 10224<br>Average Unit Price: 5.33</div>`)[0];
+                popup_37ab47aafcc9887c078c4cc399ca781f.setContent(html_bd80f6249fdcf8ab4a3a31b00b1dec5e);
+            
+        
+
+        circle_marker_15c5056eef2e7e54c6812d45da793918.bindPopup(popup_37ab47aafcc9887c078c4cc399ca781f)
+        ;
+
+        
+    
+    
+            var circle_marker_02d4298aab7420dba4a7faa8fd4e87aa = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.13, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_21d39d2a15570b13ced466ae0f97c65d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b80f88b92d9e7688fc833822a8d7be33 = $(`<div id="html_b80f88b92d9e7688fc833822a8d7be33" style="width: 100.0%; height: 100.0%;">Country: France<br>Quantity: 111300<br>Average Unit Price: 4.43</div>`)[0];
+                popup_21d39d2a15570b13ced466ae0f97c65d.setContent(html_b80f88b92d9e7688fc833822a8d7be33);
+            
+        
+
+        circle_marker_02d4298aab7420dba4a7faa8fd4e87aa.bindPopup(popup_21d39d2a15570b13ced466ae0f97c65d)
+        ;
+
+        
+    
+    
+            var circle_marker_c54862cfc9664db560d8939631a05f45 = L.circleMarker(
+                [51.1638175, 10.4478313],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.9117, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_5a9aea4f7d5a49d65a3bc720181643c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd20d0b9fc39838c26b8ed105e096fb6 = $(`<div id="html_dd20d0b9fc39838c26b8ed105e096fb6" style="width: 100.0%; height: 100.0%;">Country: Germany<br>Quantity: 119117<br>Average Unit Price: 3.61</div>`)[0];
+                popup_5a9aea4f7d5a49d65a3bc720181643c4.setContent(html_dd20d0b9fc39838c26b8ed105e096fb6);
+            
+        
+
+        circle_marker_c54862cfc9664db560d8939631a05f45.bindPopup(popup_5a9aea4f7d5a49d65a3bc720181643c4)
+        ;
+
+        
+    
+    
+            var circle_marker_38dbcfecea52e485c4306df9ff5e7e21 = L.circleMarker(
+                [38.9953683, 21.9877132],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1557, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_73992c43810ab796aacf4ce5cc492468 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2be1a59377df8c71ad7ab122ff6f3b50 = $(`<div id="html_2be1a59377df8c71ad7ab122ff6f3b50" style="width: 100.0%; height: 100.0%;">Country: Greece<br>Quantity: 1557<br>Average Unit Price: 4.57</div>`)[0];
+                popup_73992c43810ab796aacf4ce5cc492468.setContent(html_2be1a59377df8c71ad7ab122ff6f3b50);
+            
+        
+
+        circle_marker_38dbcfecea52e485c4306df9ff5e7e21.bindPopup(popup_73992c43810ab796aacf4ce5cc492468)
+        ;
+
+        
+    
+    
+            var circle_marker_93f9f88be3a7299061a4af5faaaa44b8 = L.circleMarker(
+                [64.9841821, -18.1059013],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2458, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_6631634d07eb1aa6a944d1a9850feba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb584f5b5a07299e3685428de7db32f9 = $(`<div id="html_fb584f5b5a07299e3685428de7db32f9" style="width: 100.0%; height: 100.0%;">Country: Iceland<br>Quantity: 2458<br>Average Unit Price: 2.64</div>`)[0];
+                popup_6631634d07eb1aa6a944d1a9850feba0.setContent(html_fb584f5b5a07299e3685428de7db32f9);
+            
+        
+
+        circle_marker_93f9f88be3a7299061a4af5faaaa44b8.bindPopup(popup_6631634d07eb1aa6a944d1a9850feba0)
+        ;
+
+        
+    
+    
+            var circle_marker_5b2bf8740a8c426c80a62a90c99fdbfc = L.circleMarker(
+                [30.8124247, 34.8594762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4043, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_1df8076ca4ca9b5c4affc2148c17e298 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23d9ce075539c534b266b7f3ed50cf2e = $(`<div id="html_23d9ce075539c534b266b7f3ed50cf2e" style="width: 100.0%; height: 100.0%;">Country: Israel<br>Quantity: 4043<br>Average Unit Price: 3.67</div>`)[0];
+                popup_1df8076ca4ca9b5c4affc2148c17e298.setContent(html_23d9ce075539c534b266b7f3ed50cf2e);
+            
+        
+
+        circle_marker_5b2bf8740a8c426c80a62a90c99fdbfc.bindPopup(popup_1df8076ca4ca9b5c4affc2148c17e298)
+        ;
+
+        
+    
+    
+            var circle_marker_77dfb218296068569ac76ec93a0edc37 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8112, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_01d5d66fb6580782c42385b52b94eed6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6473737df141f1d68c35a624338726eb = $(`<div id="html_6473737df141f1d68c35a624338726eb" style="width: 100.0%; height: 100.0%;">Country: Italy<br>Quantity: 8112<br>Average Unit Price: 4.72</div>`)[0];
+                popup_01d5d66fb6580782c42385b52b94eed6.setContent(html_6473737df141f1d68c35a624338726eb);
+            
+        
+
+        circle_marker_77dfb218296068569ac76ec93a0edc37.bindPopup(popup_01d5d66fb6580782c42385b52b94eed6)
+        ;
+
+        
+    
+    
+            var circle_marker_e3b5032e5addd9b214c01e876e059a18 = L.circleMarker(
+                [36.5748441, 139.2394179],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6016, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_f6d0c20a4a439463b4f1db6bca17396f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58416763fb89d95b643ef68cf45230ed = $(`<div id="html_58416763fb89d95b643ef68cf45230ed" style="width: 100.0%; height: 100.0%;">Country: Japan<br>Quantity: 26016<br>Average Unit Price: 2.05</div>`)[0];
+                popup_f6d0c20a4a439463b4f1db6bca17396f.setContent(html_58416763fb89d95b643ef68cf45230ed);
+            
+        
+
+        circle_marker_e3b5032e5addd9b214c01e876e059a18.bindPopup(popup_f6d0c20a4a439463b4f1db6bca17396f)
+        ;
+
+        
+    
+    
+            var circle_marker_5edc6de675f64e9a3e47f7f332c256f3 = L.circleMarker(
+                [40.375713, -76.4626118],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0386, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_3f07031e777e3c6c9460fdb7f71cabd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361ec2d11887deacea118e1d70c8c1a7 = $(`<div id="html_361ec2d11887deacea118e1d70c8c1a7" style="width: 100.0%; height: 100.0%;">Country: Lebanon<br>Quantity: 386<br>Average Unit Price: 5.39</div>`)[0];
+                popup_3f07031e777e3c6c9460fdb7f71cabd3.setContent(html_361ec2d11887deacea118e1d70c8c1a7);
+            
+        
+
+        circle_marker_5edc6de675f64e9a3e47f7f332c256f3.bindPopup(popup_3f07031e777e3c6c9460fdb7f71cabd3)
+        ;
+
+        
+    
+    
+            var circle_marker_599e767f67007c298b3df308d4cee88b = L.circleMarker(
+                [55.3500003, 23.7499997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0652, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_656d0224068be26c3b4a388bb610c999 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_987ad0131fe2db593d6620971c22c5e5 = $(`<div id="html_987ad0131fe2db593d6620971c22c5e5" style="width: 100.0%; height: 100.0%;">Country: Lithuania<br>Quantity: 652<br>Average Unit Price: 2.84</div>`)[0];
+                popup_656d0224068be26c3b4a388bb610c999.setContent(html_987ad0131fe2db593d6620971c22c5e5);
+            
+        
+
+        circle_marker_599e767f67007c298b3df308d4cee88b.bindPopup(popup_656d0224068be26c3b4a388bb610c999)
+        ;
+
+        
+    
+    
+            var circle_marker_195885c5c46bc9762b783428603f18cf = L.circleMarker(
+                [35.8885993, 14.4476911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.097, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_90b3dbffa83c170457284e2966bf4d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c967eced8a3aa1217434f4973d7ddc6 = $(`<div id="html_4c967eced8a3aa1217434f4973d7ddc6" style="width: 100.0%; height: 100.0%;">Country: Malta<br>Quantity: 970<br>Average Unit Price: 4.87</div>`)[0];
+                popup_90b3dbffa83c170457284e2966bf4d43.setContent(html_4c967eced8a3aa1217434f4973d7ddc6);
+            
+        
+
+        circle_marker_195885c5c46bc9762b783428603f18cf.bindPopup(popup_90b3dbffa83c170457284e2966bf4d43)
+        ;
+
+        
+    
+    
+            var circle_marker_eaba3f22025ba4ac187e3696f5c3e8c6 = L.circleMarker(
+                [52.2434979, 5.6343227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0361, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_dbb699108afa745a966ed72e4911ef9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3360d668c6b3c780d99f7d7fdc01e8d5 = $(`<div id="html_3360d668c6b3c780d99f7d7fdc01e8d5" style="width: 100.0%; height: 100.0%;">Country: Netherlands<br>Quantity: 200361<br>Average Unit Price: 2.65</div>`)[0];
+                popup_dbb699108afa745a966ed72e4911ef9f.setContent(html_3360d668c6b3c780d99f7d7fdc01e8d5);
+            
+        
+
+        circle_marker_eaba3f22025ba4ac187e3696f5c3e8c6.bindPopup(popup_dbb699108afa745a966ed72e4911ef9f)
+        ;
+
+        
+    
+    
+            var circle_marker_3f5cd0afc460ce278be1dafe7a87e9c6 = L.circleMarker(
+                [64.5731537, 11.52803643954819],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9334, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_72111b06009f8798d68493f97160d557 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f7cc0f42fb4305d6bf1e296b134127 = $(`<div id="html_d5f7cc0f42fb4305d6bf1e296b134127" style="width: 100.0%; height: 100.0%;">Country: Norway<br>Quantity: 19334<br>Average Unit Price: 4.86</div>`)[0];
+                popup_72111b06009f8798d68493f97160d557.setContent(html_d5f7cc0f42fb4305d6bf1e296b134127);
+            
+        
+
+        circle_marker_3f5cd0afc460ce278be1dafe7a87e9c6.bindPopup(popup_72111b06009f8798d68493f97160d557)
+        ;
+
+        
+    
+    
+            var circle_marker_96678f22a28e4fae3d5eff82d352a5f8 = L.circleMarker(
+                [52.215933, 19.134422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3684, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_b9c664cff64659f4f1da181a25876fae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b9fe200c277972e061c8b1d4ecad457 = $(`<div id="html_3b9fe200c277972e061c8b1d4ecad457" style="width: 100.0%; height: 100.0%;">Country: Poland<br>Quantity: 3684<br>Average Unit Price: 4.17</div>`)[0];
+                popup_b9c664cff64659f4f1da181a25876fae.setContent(html_3b9fe200c277972e061c8b1d4ecad457);
+            
+        
+
+        circle_marker_96678f22a28e4fae3d5eff82d352a5f8.bindPopup(popup_b9c664cff64659f4f1da181a25876fae)
+        ;
+
+        
+    
+    
+            var circle_marker_c12c7037eb599caa1748bba995a0ab1b = L.circleMarker(
+                [39.6621648, -8.1353519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6018, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_aa161e737912468c3b0e39f6aeda3084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9f220a62f6edccd7038bc0973a4c31e = $(`<div id="html_d9f220a62f6edccd7038bc0973a4c31e" style="width: 100.0%; height: 100.0%;">Country: Portugal<br>Quantity: 16018<br>Average Unit Price: 5.98</div>`)[0];
+                popup_aa161e737912468c3b0e39f6aeda3084.setContent(html_d9f220a62f6edccd7038bc0973a4c31e);
+            
+        
+
+        circle_marker_c12c7037eb599caa1748bba995a0ab1b.bindPopup(popup_aa161e737912468c3b0e39f6aeda3084)
+        ;
+
+        
+    
+    
+            var circle_marker_f515578535293108494579b7a03c146d = L.circleMarker(
+                [-28.8166236, 24.991639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0351, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_ddef84647a540af3572364b0e92d09e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc8b4ca942f3acb17e641cb418a5b54f = $(`<div id="html_fc8b4ca942f3acb17e641cb418a5b54f" style="width: 100.0%; height: 100.0%;">Country: RSA<br>Quantity: 351<br>Average Unit Price: 4.35</div>`)[0];
+                popup_ddef84647a540af3572364b0e92d09e7.setContent(html_fc8b4ca942f3acb17e641cb418a5b54f);
+            
+        
+
+        circle_marker_f515578535293108494579b7a03c146d.bindPopup(popup_ddef84647a540af3572364b0e92d09e7)
+        ;
+
+        
+    
+    
+            var circle_marker_ff355814e512283e16ba3ed9289008b7 = L.circleMarker(
+                [25.6242618, 42.3528328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.008, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_f579ca07186763859133ce69fef409d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c3a8bfd989af5347f9ba9d595ef94af = $(`<div id="html_1c3a8bfd989af5347f9ba9d595ef94af" style="width: 100.0%; height: 100.0%;">Country: Saudi Arabia<br>Quantity: 80<br>Average Unit Price: 2.35</div>`)[0];
+                popup_f579ca07186763859133ce69fef409d1.setContent(html_1c3a8bfd989af5347f9ba9d595ef94af);
+            
+        
+
+        circle_marker_ff355814e512283e16ba3ed9289008b7.bindPopup(popup_f579ca07186763859133ce69fef409d1)
+        ;
+
+        
+    
+    
+            var circle_marker_460f63520ec98af4338887fb50c58c83 = L.circleMarker(
+                [1.357107, 103.8194992],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5237, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_ddace9fa217af4a35b01ace27469f6eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01703853f2b77ba079696334cbed6a29 = $(`<div id="html_01703853f2b77ba079696334cbed6a29" style="width: 100.0%; height: 100.0%;">Country: Singapore<br>Quantity: 5237<br>Average Unit Price: 31.91</div>`)[0];
+                popup_ddace9fa217af4a35b01ace27469f6eb.setContent(html_01703853f2b77ba079696334cbed6a29);
+            
+        
+
+        circle_marker_460f63520ec98af4338887fb50c58c83.bindPopup(popup_ddace9fa217af4a35b01ace27469f6eb)
+        ;
+
+        
+    
+    
+            var circle_marker_999d45b1a27f5001c4b24996b4621367 = L.circleMarker(
+                [39.3260685, -4.8379791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7867, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_8308dc0e14f59b689c8ce4f4be0eae26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d590e46c75f08eac4b0ad26b3067f2fc = $(`<div id="html_d590e46c75f08eac4b0ad26b3067f2fc" style="width: 100.0%; height: 100.0%;">Country: Spain<br>Quantity: 27867<br>Average Unit Price: 3.84</div>`)[0];
+                popup_8308dc0e14f59b689c8ce4f4be0eae26.setContent(html_d590e46c75f08eac4b0ad26b3067f2fc);
+            
+        
+
+        circle_marker_999d45b1a27f5001c4b24996b4621367.bindPopup(popup_8308dc0e14f59b689c8ce4f4be0eae26)
+        ;
+
+        
+    
+    
+            var circle_marker_4074a3eca6c8af458cbf5c6f5472413f = L.circleMarker(
+                [59.6749712, 14.5208584],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6078, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_1bb369ab5f62ace8f1ff003b296db121 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e995d89136e8309827d1936817f33a4f = $(`<div id="html_e995d89136e8309827d1936817f33a4f" style="width: 100.0%; height: 100.0%;">Country: Sweden<br>Quantity: 36078<br>Average Unit Price: 3.76</div>`)[0];
+                popup_1bb369ab5f62ace8f1ff003b296db121.setContent(html_e995d89136e8309827d1936817f33a4f);
+            
+        
+
+        circle_marker_4074a3eca6c8af458cbf5c6f5472413f.bindPopup(popup_1bb369ab5f62ace8f1ff003b296db121)
+        ;
+
+        
+    
+    
+            var circle_marker_01b79b4c11717eb8b65b3a7274284b06 = L.circleMarker(
+                [46.7985624, 8.2319736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0082, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_ed9dd6c64c53a790058214a6f38305b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f20f740938257df3ffcfc2827cae0110 = $(`<div id="html_f20f740938257df3ffcfc2827cae0110" style="width: 100.0%; height: 100.0%;">Country: Switzerland<br>Quantity: 30082<br>Average Unit Price: 3.47</div>`)[0];
+                popup_ed9dd6c64c53a790058214a6f38305b9.setContent(html_f20f740938257df3ffcfc2827cae0110);
+            
+        
+
+        circle_marker_01b79b4c11717eb8b65b3a7274284b06.bindPopup(popup_ed9dd6c64c53a790058214a6f38305b9)
+        ;
+
+        
+    
+    
+            var circle_marker_aaa3912b0a72051c344a76bdaa94df00 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2458, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_1273b75f1a729ffa6a0f0dff9a564e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7ed23e9e99f15ea050b952d1772fc5d = $(`<div id="html_e7ed23e9e99f15ea050b952d1772fc5d" style="width: 100.0%; height: 100.0%;">Country: USA<br>Quantity: 2458<br>Average Unit Price: 2.31</div>`)[0];
+                popup_1273b75f1a729ffa6a0f0dff9a564e82.setContent(html_e7ed23e9e99f15ea050b952d1772fc5d);
+            
+        
+
+        circle_marker_aaa3912b0a72051c344a76bdaa94df00.bindPopup(popup_1273b75f1a729ffa6a0f0dff9a564e82)
+        ;
+
+        
+    
+    
+            var circle_marker_5a4d8794c83c58dce3dd0aac32865820 = L.circleMarker(
+                [24.0002488, 53.9994829],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0982, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_70c4a6f00d853591ac98b3cda5cd1877 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94f0b74278ba4ac8ce722fd609edcd0b = $(`<div id="html_94f0b74278ba4ac8ce722fd609edcd0b" style="width: 100.0%; height: 100.0%;">Country: United Arab Emirates<br>Quantity: 982<br>Average Unit Price: 3.38</div>`)[0];
+                popup_70c4a6f00d853591ac98b3cda5cd1877.setContent(html_94f0b74278ba4ac8ce722fd609edcd0b);
+            
+        
+
+        circle_marker_5a4d8794c83c58dce3dd0aac32865820.bindPopup(popup_70c4a6f00d853591ac98b3cda5cd1877)
+        ;
+
+        
+    
+    
+            var circle_marker_c134d7dc4e614e96d069e31ce656c414 = L.circleMarker(
+                [54.7023545, -3.2765753],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 421.9049, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_751abb9999c6bef2205fa997736ca249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d946e78702a0cf5c11d9df6a9bdd234 = $(`<div id="html_1d946e78702a0cf5c11d9df6a9bdd234" style="width: 100.0%; height: 100.0%;">Country: United Kingdom<br>Quantity: 4219049<br>Average Unit Price: 2.99</div>`)[0];
+                popup_751abb9999c6bef2205fa997736ca249.setContent(html_1d946e78702a0cf5c11d9df6a9bdd234);
+            
+        
+
+        circle_marker_c134d7dc4e614e96d069e31ce656c414.bindPopup(popup_751abb9999c6bef2205fa997736ca249)
+        ;
+
+        
+    
+    
+            var circle_marker_568c15706edd671ad4a270af9ac60dc0 = L.circleMarker(
+                [27.1556836, 65.6101216],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1778, "stroke": true, "weight": 3}
+            ).addTo(map_a65457a31e9b69e3d2bf5ea169d173af);
+        
+    
+        var popup_8f490a8cb5a99bac9e87773f88bbd5eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f224f4117350ea34d699df7820acb3e9 = $(`<div id="html_f224f4117350ea34d699df7820acb3e9" style="width: 100.0%; height: 100.0%;">Country: Unspecified<br>Quantity: 1778<br>Average Unit Price: 3.23</div>`)[0];
+                popup_8f490a8cb5a99bac9e87773f88bbd5eb.setContent(html_f224f4117350ea34d699df7820acb3e9);
+            
+        
+
+        circle_marker_568c15706edd671ad4a270af9ac60dc0.bindPopup(popup_8f490a8cb5a99bac9e87773f88bbd5eb)
+        ;
+
+        
+    
+</script>
+</html>
